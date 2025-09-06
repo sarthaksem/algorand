@@ -1,0 +1,1126 @@
+{
+  "version": 3,
+  "sources": [
+    "C:/Users/acer/algoranddelhi/projects/algoranddelhi/smart_contracts/hello_world/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAIwC;AAA0B;;AAAhE;AAIO;AACgB;AAFvB;AAMoC;AAAwB;;;;;;AAA5D;AAXF;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;AAAA;;AAiCE;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AATA;;AAAA;AAAA;AAAA;;AAAA;AAdF;;;AAAA;;;AAAA;;;AAAA;AAcE;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAdF;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAcE;;;AAZsC;AAapC;;AAAA;AATK;AAUL;;AAAA;AALkC;AAMd;;AAApB;AAEO;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAqC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAArC;AAAP;AARkC;AAAA;AAAA;AAAA;AAaR;;AAAtB;AAAJ;;;AAbkC;AAcZ;;;;;;;;AAApB;AACO;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAP;AAEO;;;;;;;;;;;;;;;;;;;;;;;;;;AAAP;AA1BkC;AAAA;AAAA;AAAA;AAiClC;;;;;;;;;;;;AAAA;AAAA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;AADA;AAEA;;;;;;;;;;;;;AAFA;AAxBgC;AAAA;AAAA;AAAA;AAwBhC;AADF",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 1"
+    },
+    "5": {
+      "op": "bytecblock \"status\" \"borrower\" 0x151f7c75 \"loanAmount\" \"Pending\""
+    },
+    "47": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "reinterpret_bool%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bool%0#0"
+      ]
+    },
+    "49": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "52": {
+      "op": "bytec_1 // \"borrower\"",
+      "defined_out": [
+        "\"borrower\""
+      ],
+      "stack_out": [
+        "\"borrower\""
+      ]
+    },
+    "53": {
+      "op": "pushbytes \"\"",
+      "defined_out": [
+        "\"\"",
+        "\"borrower\""
+      ],
+      "stack_out": [
+        "\"borrower\"",
+        "\"\""
+      ]
+    },
+    "55": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "56": {
+      "op": "bytec_3 // \"loanAmount\"",
+      "defined_out": [
+        "\"loanAmount\""
+      ],
+      "stack_out": [
+        "\"loanAmount\""
+      ]
+    },
+    "57": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"loanAmount\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"loanAmount\"",
+        "0"
+      ]
+    },
+    "58": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "59": {
+      "op": "bytec_0 // \"status\"",
+      "defined_out": [
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\""
+      ]
+    },
+    "60": {
+      "op": "pushbytes \"None\"",
+      "defined_out": [
+        "\"None\"",
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\"",
+        "\"None\""
+      ]
+    },
+    "66": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "67": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "69": {
+      "op": "bz main_bare_routing@10",
+      "stack_out": []
+    },
+    "72": {
+      "op": "pushbytess 0x37d4a52e 0x0e03bc0e 0xd564ef27 // method \"createLoan(string,uint64)string\", method \"repayLoan()string\", method \"getLoan()string\"",
+      "defined_out": [
+        "Method(createLoan(string,uint64)string)",
+        "Method(getLoan()string)",
+        "Method(repayLoan()string)"
+      ],
+      "stack_out": [
+        "Method(createLoan(string,uint64)string)",
+        "Method(repayLoan()string)",
+        "Method(getLoan()string)"
+      ]
+    },
+    "89": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(createLoan(string,uint64)string)",
+        "Method(getLoan()string)",
+        "Method(repayLoan()string)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(createLoan(string,uint64)string)",
+        "Method(repayLoan()string)",
+        "Method(getLoan()string)",
+        "tmp%2#0"
+      ]
+    },
+    "92": {
+      "op": "match main_createLoan_route@5 main_repayLoan_route@6 main_getLoan_route@7",
+      "stack_out": []
+    },
+    "100": {
+      "block": "main_after_if_else@14",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "101": {
+      "op": "return",
+      "stack_out": []
+    },
+    "102": {
+      "block": "main_getLoan_route@7",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%16#0"
+      ]
+    },
+    "104": {
+      "op": "!",
+      "defined_out": [
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%17#0"
+      ]
+    },
+    "105": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "106": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%18#0"
+      ]
+    },
+    "108": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "109": {
+      "callsub": "smart_contracts/hello_world/contract.algo.ts::LoanRecord.getLoan",
+      "op": "callsub getLoan",
+      "defined_out": [
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0"
+      ]
+    },
+    "112": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%2#0",
+        "to_encode%2#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "to_encode%2#0 (copy)"
+      ]
+    },
+    "113": {
+      "op": "len",
+      "defined_out": [
+        "length%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "length%2#0"
+      ]
+    },
+    "114": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "as_bytes%2#0"
+      ]
+    },
+    "115": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "length_uint16%2#0"
+      ]
+    },
+    "118": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%2#0",
+        "to_encode%2#0"
+      ]
+    },
+    "119": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%2#0"
+      ],
+      "stack_out": [
+        "encoded_value%2#0"
+      ]
+    },
+    "120": {
+      "op": "bytec_2 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%2#0"
+      ],
+      "stack_out": [
+        "encoded_value%2#0",
+        "0x151f7c75"
+      ]
+    },
+    "121": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%2#0"
+      ]
+    },
+    "122": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0"
+      ]
+    },
+    "123": {
+      "op": "log",
+      "stack_out": []
+    },
+    "124": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "125": {
+      "op": "return",
+      "stack_out": []
+    },
+    "126": {
+      "block": "main_repayLoan_route@6",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "128": {
+      "op": "!",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "129": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "130": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "132": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "133": {
+      "callsub": "smart_contracts/hello_world/contract.algo.ts::LoanRecord.repayLoan",
+      "op": "callsub repayLoan",
+      "defined_out": [
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0"
+      ]
+    },
+    "136": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%1#0",
+        "to_encode%1#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "to_encode%1#0 (copy)"
+      ]
+    },
+    "137": {
+      "op": "len",
+      "defined_out": [
+        "length%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "length%1#0"
+      ]
+    },
+    "138": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "as_bytes%1#0"
+      ]
+    },
+    "139": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "length_uint16%1#0"
+      ]
+    },
+    "142": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%1#0",
+        "to_encode%1#0"
+      ]
+    },
+    "143": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "encoded_value%1#0"
+      ]
+    },
+    "144": {
+      "op": "bytec_2 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "encoded_value%1#0",
+        "0x151f7c75"
+      ]
+    },
+    "145": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%1#0"
+      ]
+    },
+    "146": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%15#0"
+      ]
+    },
+    "147": {
+      "op": "log",
+      "stack_out": []
+    },
+    "148": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "149": {
+      "op": "return",
+      "stack_out": []
+    },
+    "150": {
+      "block": "main_createLoan_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "152": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "153": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "154": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "156": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "157": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "160": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "163": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[8]%0#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "reinterpret_bytes[8]%0#0"
+      ]
+    },
+    "166": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "167": {
+      "callsub": "smart_contracts/hello_world/contract.algo.ts::LoanRecord.createLoan",
+      "op": "callsub createLoan",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "170": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ]
+    },
+    "171": {
+      "op": "len",
+      "defined_out": [
+        "length%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length%0#0"
+      ]
+    },
+    "172": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "173": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length_uint16%0#0"
+      ]
+    },
+    "176": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ]
+    },
+    "177": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0"
+      ]
+    },
+    "178": {
+      "op": "bytec_2 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "179": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ]
+    },
+    "180": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "181": {
+      "op": "log",
+      "stack_out": []
+    },
+    "182": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "183": {
+      "op": "return",
+      "stack_out": []
+    },
+    "184": {
+      "block": "main_bare_routing@10",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%21#0"
+      ],
+      "stack_out": [
+        "tmp%21#0"
+      ]
+    },
+    "186": {
+      "op": "bnz main_after_if_else@14",
+      "stack_out": []
+    },
+    "189": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%22#0"
+      ],
+      "stack_out": [
+        "tmp%22#0"
+      ]
+    },
+    "191": {
+      "op": "!",
+      "defined_out": [
+        "tmp%23#0"
+      ],
+      "stack_out": [
+        "tmp%23#0"
+      ]
+    },
+    "192": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "193": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "194": {
+      "op": "return",
+      "stack_out": []
+    },
+    "195": {
+      "subroutine": "smart_contracts/hello_world/contract.algo.ts::LoanRecord.createLoan",
+      "params": {
+        "borrowerName#0": "bytes",
+        "amount#0": "uint64"
+      },
+      "block": "createLoan",
+      "stack_in": [],
+      "op": "proto 2 1"
+    },
+    "198": {
+      "op": "bytec_1 // \"borrower\"",
+      "defined_out": [
+        "\"borrower\""
+      ],
+      "stack_out": [
+        "\"borrower\""
+      ]
+    },
+    "199": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"borrower\"",
+        "borrowerName#0 (copy)"
+      ],
+      "stack_out": [
+        "\"borrower\"",
+        "borrowerName#0 (copy)"
+      ]
+    },
+    "201": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "202": {
+      "op": "bytec_3 // \"loanAmount\"",
+      "defined_out": [
+        "\"loanAmount\""
+      ],
+      "stack_out": [
+        "\"loanAmount\""
+      ]
+    },
+    "203": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"loanAmount\"",
+        "amount#0 (copy)"
+      ],
+      "stack_out": [
+        "\"loanAmount\"",
+        "amount#0 (copy)"
+      ]
+    },
+    "205": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "206": {
+      "op": "bytec_0 // \"status\"",
+      "defined_out": [
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\""
+      ]
+    },
+    "207": {
+      "op": "bytec 4 // \"Pending\"",
+      "defined_out": [
+        "\"Pending\"",
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\"",
+        "\"Pending\""
+      ]
+    },
+    "209": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "210": {
+      "op": "pushbytes \"Loan created for \"",
+      "defined_out": [
+        "\"Loan created for \""
+      ],
+      "stack_out": [
+        "\"Loan created for \""
+      ]
+    },
+    "229": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "\"Loan created for \"",
+        "borrowerName#0 (copy)"
+      ]
+    },
+    "231": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "232": {
+      "op": "pushbytes \" with amount (check client)\"",
+      "defined_out": [
+        "\" with amount (check client)\"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" with amount (check client)\""
+      ]
+    },
+    "261": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "262": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "263": {
+      "subroutine": "smart_contracts/hello_world/contract.algo.ts::LoanRecord.repayLoan",
+      "params": {},
+      "block": "repayLoan",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "264": {
+      "op": "bytec_0 // \"status\"",
+      "defined_out": [
+        "\"status\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"status\""
+      ]
+    },
+    "265": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "266": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "267": {
+      "op": "bytec 4 // \"Pending\"",
+      "defined_out": [
+        "\"Pending\"",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "\"Pending\""
+      ]
+    },
+    "269": {
+      "op": "==",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "270": {
+      "op": "bz repayLoan_else_body@2",
+      "stack_out": []
+    },
+    "273": {
+      "op": "bytec_0 // \"status\"",
+      "stack_out": [
+        "\"status\""
+      ]
+    },
+    "274": {
+      "op": "pushbytes \"Repaid\"",
+      "defined_out": [
+        "\"Repaid\"",
+        "\"status\""
+      ],
+      "stack_out": [
+        "\"status\"",
+        "\"Repaid\""
+      ]
+    },
+    "282": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "283": {
+      "op": "pushbytes \"Loan repaid successfully!\"",
+      "defined_out": [
+        "\"Loan repaid successfully!\""
+      ],
+      "stack_out": [
+        "\"Loan repaid successfully!\""
+      ]
+    },
+    "310": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "311": {
+      "block": "repayLoan_else_body@2",
+      "stack_in": [],
+      "op": "pushbytes \"No active loan to repay.\"",
+      "defined_out": [
+        "\"No active loan to repay.\""
+      ],
+      "stack_out": [
+        "\"No active loan to repay.\""
+      ]
+    },
+    "337": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "338": {
+      "subroutine": "smart_contracts/hello_world/contract.algo.ts::LoanRecord.getLoan",
+      "params": {},
+      "block": "getLoan",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "339": {
+      "op": "bytec_1 // \"borrower\"",
+      "defined_out": [
+        "\"borrower\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"borrower\""
+      ]
+    },
+    "340": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "341": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "342": {
+      "op": "pushbytes \"Borrower: \"",
+      "defined_out": [
+        "\"Borrower: \"",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "\"Borrower: \""
+      ]
+    },
+    "354": {
+      "op": "swap",
+      "stack_out": [
+        "\"Borrower: \"",
+        "maybe_value%0#0"
+      ]
+    },
+    "355": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "356": {
+      "op": "pushbytes \" | Amount: (check client) \"",
+      "defined_out": [
+        "\" | Amount: (check client) \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" | Amount: (check client) \""
+      ]
+    },
+    "384": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "385": {
+      "op": "pushbytes \" | Status: \"",
+      "defined_out": [
+        "\" | Status: \"",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "\" | Status: \""
+      ]
+    },
+    "398": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "399": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%2#0",
+        "0"
+      ]
+    },
+    "400": {
+      "op": "bytec_0 // \"status\"",
+      "defined_out": [
+        "\"status\"",
+        "0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "0",
+        "\"status\""
+      ]
+    },
+    "401": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "402": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "tmp%2#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "403": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "404": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}
